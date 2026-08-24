@@ -337,10 +337,7 @@ background-color: #e67e22;
     
     padding: 15px;
     background-color: #111;
-    
     color:white;
-    border:2px solid #ddd;
-    border-radius:10px;
     transition:0.3s;
 
 }
@@ -349,6 +346,7 @@ background-color: #e67e22;
     font-weight:bold;
     margin-bottom:30px;
     color:#e67e22;
+    
 }
 
 /* SERVICES CONTAINER */
@@ -375,5 +373,64 @@ background-color: #e67e22;
 .service-list i{
     font-size:50px;
     color:#e67e22;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
+.service-list img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left:40px;
+}
+.service-list h3{
+    margin-bottom: 15px;
+    color: #e67e22;
+}
+
+/* SERVICES fullydetails */
+
+
+.service-fullydetails{
+    
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    align-items:center;
+    background-color:#111;
+    margin-top: 30px;
+   
+}
+
+.service-details h3{
+    font-size: 30px;
+    color: #e67e22;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.service-details{
+    height: 500px;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    background-color:#181818;
+    transition:0.3s;
+}
+
+
+.service-details p {
+    font-size:30px;
+    color:#ddd;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1;
+    
+}
+.service-details img{
+    width: 400px;
+    height: 200px;
+    border-radius: 10%;
+    margin-top: 15px;
+    margin-left:40px;
+}
+
