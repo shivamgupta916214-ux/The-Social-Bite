@@ -124,11 +124,17 @@
 
             </div>
 
-            <button class="all-btn" type="button"> All</button>
-            <button class="all-btn" type="button"> Snacks </button>
-            <button class="all-btn" type="button"> ice-cream </button>
-            <button class="all-btn" type="button"> Veg </button>
-            <button class="all-btn" type="button"> Non-Veg</button>
+            
+
+            <button class="all-btn" type="button" onclick="filterFood('all')">All</button>
+
+            <button class="all-btn" type="button" onclick="filterFood('snacks')">Snacks</button>
+
+            <button class="all-btn" type="button" onclick="filterFood('ice-cream')">Ice-Cream</button>
+
+            <button class="all-btn" type="button" onclick="filterFood('veg')">Veg</button>
+
+            <button class="all-btn" type="button" onclick="filterFood('non-veg')">Non-Veg</button>
             
 
 
@@ -138,7 +144,7 @@
         <div class="menu-container">
 
 
-            <div class="food-list">
+            <div class="food-list ">
 
                 <img src="colddrink.jpg" alt="Cold Drink">
 
