@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewpgit statusort" content="width=device-width, initial-scale=1.0">
     <title>The Social Bite</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -21,27 +26,33 @@
 
         </div>
 
-<div class="features">
-        <ul>
+        <div class="features">
+
+            <ul>
 
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
+            
 
-        </ul>
+            </ul>
 
         </div>
 
 
         <div class="buttons">
+
             <div class="cart-icon" onclick="toggleCart()">
   🛒 
-</div>
+        </div>
                 
             
             <button class="login">Login</button>
-                <button class="signup">SignUp</button>
+
+            <button class="signup">SignUp</button>
+
         </div>
 
     </nav>
@@ -50,9 +61,13 @@
     <!-- About Section -->
 
     <section class="about" >
+
         <div class="about-container">
+
             <div class="about-content">
+
                 <h1>Welcome to The Social Bite</h1>
+
                 <p>
                     Enjoy delicious food with amazing taste
                     and fresh ingredients.
@@ -60,11 +75,27 @@
                     Come together, share good food, and create unforgettable moments with us.
                     Great food, good vibes, and happy memories — all at The Social Bite. 🍽️✨
                 </p>
-         <div class="exp-btn">
-                <button class="book-btn">Book a Table</button>
-                <button class="explore">Explore Menu</button>
                 
-        </div>
+                <div class="about-social">
+
+                    <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
+
+                    <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook-f"></i> </a>
+
+                    <a href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i> </a>
+
+                </div>
+
+                <div class="exp-btn">
+
+                    <button class="book-btn">Book a Table</button>
+
+                    <button class="explore">Explore Menu</button>
+                
+                </div>
+
+                
+
             </div>
 
 
@@ -85,11 +116,35 @@
 
         <h2>Our Menu</h2>
 
+        <div class="food-category">
+
+            <div class="search-container">
+
+                <input type="text" class="search-bar" placeholder="Search food....">
+
+            </div>
+
+            
+
+            <button class="all-btn" type="button" onclick="filterFood('all')">All</button>
+
+             <button class="all-btn" type="button" onclick="filterFood('drinks')">Drinks</button>
+
+            <button class="all-btn" type="button" onclick="filterFood('snacks')">Snacks</button>
+
+            <button class="all-btn" type="button" onclick="filterFood('veg')">Veg</button>
+
+            <button class="all-btn" type="button" onclick="filterFood('non-veg')">Non-Veg</button>
+            
+
+
+        </div>
+
 
         <div class="menu-container">
 
 
-            <div class="food-list">
+            <div class="food-list drinks">
 
                 <img src="colddrink.jpg" alt="Cold Drink">
 
@@ -100,6 +155,8 @@
                 </p>
 
                 <span>₹100</span>
+
+                <button class="add-to-cart">Add to Cart</button>
 
             </div>
 
@@ -115,11 +172,13 @@
 
                 <span>₹99</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
 
-            <div class="food-list">
+            <div class="food-list drinks">
 
                 <img src="Hot-coffee.jpg" alt="Hot Coffee">
 
@@ -131,10 +190,12 @@
 
                 <span>₹150</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list drinks">
 
                 <img src="cold-coffe.jpg" alt="cold Coffee">
 
@@ -146,10 +207,12 @@
 
                 <span>₹249</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list veg snacks">
 
                 <img src="veg-momos.jpg" alt=" Veg Momos">
 
@@ -161,10 +224,12 @@
 
                 <span>₹149</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-             <div class="food-list">
+             <div class="food-list non-veg snacks">
 
                 <img src="chicken-momos.jpg" alt="Chicken Momos">
 
@@ -176,10 +241,12 @@
 
                 <span>₹189</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list veg snacks">
 
                 <img src="french-fries.jpg" alt="French Fries">
 
@@ -191,10 +258,12 @@
 
                 <span>₹129</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list veg snacks">
 
                 <img src="sandwich.jpg" alt="Sandwich">
 
@@ -206,10 +275,12 @@
 
                 <span>₹179</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list veg snacks">
 
                 <img src="burger.jpg" alt="Burger">
 
@@ -221,10 +292,12 @@
 
                 <span>₹199</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list veg">
 
                 <img src="pizza.jpg" alt="Pizza">
 
@@ -236,10 +309,12 @@
 
                 <span>₹299</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list veg snacks">
 
                 <img src="veg-rolls.jpg" alt="Veg Rolls">
 
@@ -251,9 +326,11 @@
 
                 <span>₹279</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
-            <div class="food-list">
+            <div class="food-list veg snacks">
                 <img src="Alfredo-pasta.jpg" alt="Alfredo-pasta">
 
                 <h3>Alfredo Pasta</h3>
@@ -261,12 +338,15 @@
                 <p>
                     Creamy alfredo pasta with fresh ingredients.
                 </p>
+
                 <span>₹299</span>
+
+                <button class="add-to-cart">Add to Cart</button>
 
             </div>
 
 
-            <div class="food-list">
+            <div class="food-list non-veg snacks">
 
                 <img src="chicken-rolls.jpg" alt="Chicken Rolls">
 
@@ -278,9 +358,11 @@
 
                 <span>₹299</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
-            <div class="food-list">
+            <div class="food-list veg">
 
                 <img src="veg-biryani.jpg" alt="Veg Biryani">
 
@@ -292,9 +374,11 @@
 
                 <span>₹199</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
-            <div class="food-list">
+            <div class="food-list non-veg">
 
                 <img src="Chicken-Biryani.jpg" alt="Chicken Biryani">
 
@@ -308,6 +392,8 @@
 
                 <span>₹249</span>
 
+                <button class="add-to-cart">Add to Cart</button>
+
             </div>
 
 
@@ -317,7 +403,7 @@
 
     <!-- services Section -->
 
-     <section class="services">
+     <section class="service">
 
         <h2> Our Services </h2>
 
@@ -327,16 +413,22 @@
 
                 <i class="fa-solid fa-utensils"></i>
 
+                <img src="dine-in.jpg" alt="Dine-in">
+
                 <h3>Dine-In</h3>
 
                 <p>Enjoy delicious food in a comfortable atmosphere</p>
+
             </div>
 
             <div class="service-list">
 
                 <i class="fa-solid fa-bag-shopping"></i>
 
-                <h3> takeaway </h3>
+                <img src="Takeaway.jpg" alt="Takeaway">
+
+
+                <h3> Takeaway </h3>
 
                 <p> Get your favourite food packed and ready to go. </p>
                 
@@ -347,15 +439,58 @@
 
                 <i class="fa-solid fa-motorcycle"></i>
 
+                <img src="Delivery.jpg" alt="Delivery">
+
                 <h3> Delivery </h3>
 
                 <p> Get your food delivered to your doorstep. </p>
+
             </div>
 
 
         </div>
 
-     </section>
+        <div class="service-fullydetails">
+
+            <div class="service-details">
+
+                <h3> Dine-In </h3>
+
+                <img src="dine-in.jpg" alt="Dine-in">
+
+                <p> Enjoy delicious food in a cozy and welcoming atmosphere. Our dine-in experience is perfect for relaxing, spending time with loved ones, and enjoying every bite.</p>
+
+
+
+            </div>
+
+            <div class="service-details">
+
+                <h3> Takeaway </h3>
+
+                <img src="Takeaway.jpg" alt="Takeaway">
+
+                <p> Enjoy your favorite meals wherever you go. Order your food fresh, packed with care, and ready to take away. </p>
+
+
+            </div>
+
+            <div class="service-details">
+                <h3> Delivery </h3>
+
+                <img src="Delivery.jpg" alt="Delivery">
+
+                <p> Get your food delivered to your doorstep. Our delivery service is fast, reliable, and ensures that your meals arrive fresh and delicious. </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    
+
+    
 
         
 </body>
